@@ -1,0 +1,279 @@
+
+/* Design af navigationsbar */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+     background-color: #ddd3de;
+     font-family: didot;
+}
+
+
+.container {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav{
+   background-color: transparent;
+    height: 80px;
+    width: 100%;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 25px 20px -20px rgba (0, 0, 0, 0.4) ;  
+
+ }
+
+ nav ul{
+    float: right;
+    margin-right: 30px;
+ }
+
+
+
+
+nav ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 13px 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500px;
+    color: #7d78d1;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+}
+
+
+
+nav ul li::after{
+    content: '';
+    background: #7d78d1;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+
+nav ul li:hover{
+    color: white;
+
+}
+
+nav ul li:hover::after{
+    top: 50%;
+    opacity: 1; 
+}
+
+
+
+
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    font-size: 120px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+/* Design af billeder og deres størrelse */
+
+img{
+ width: 300px;
+ margin-left: 50px;
+}
+
+.img2{
+    width: 100%;
+    
+   display: block;
+   height: auto;
+   margin-left: auto;
+    margin-right: auto;
+}
+
+.img3{
+    width: 452.56px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    margin-top: auto;
+}
+
+/* Design af tekst i blåt banner - lave den responisve */
+
+.centered {
+    margin-top: 360px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #daeef0;
+    color: white;
+    font-size: 35px;
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background-color: #aad1e0;
+    color: white;
+    cursor: pointer;
+
+  }
+
+  .centered:hover {
+    background-color: #ddd3de;
+  }
+  .p1{
+    font-size: 36px;
+    margin-left: 500px;
+    margin-right: 20px;
+    margin-top: -450px;
+    color: #989ae0;
+  
+  }
+
+  .img4{
+    width: 895px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+
+
+  }
+
+  /* Design af footer */
+
+.footer{
+    margin-top: 150px;
+    width: 100%;
+    padding: 100px 15%;
+    background: #ddd3de;
+    color: #7d78d1;
+    display: flex;
+
+  
+}
+
+.footer div{
+    text-align: center;
+}
+
+.col-2{
+    flex-grow: 2;
+}
+
+.footer div h3{
+font-weight: 300;
+margin-bottom: 30px;
+letter-spacing: 1px;
+}
+
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #7d78d1;
+    margin-bottom: 10px;
+}
+
+form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+    background-color: white;
+}
+
+form button{
+    background: transparent;
+    border: 2px solid #7d78d1;
+    color: #7d78d1;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons i{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Design a video og tekst over video */
+
+.video-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .video {
+    margin-top: -25px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 20px;
+    cursor: pointer;
+    font-size: 75px;
+  }
+
+  .button {
+   
+    color: #7d78d1;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #ddd3de;
+  }
+
